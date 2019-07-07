@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./src/",
     "autogypi": "autogypi",
     "node-gyp": "node-gyp",
     "emcc-path": "emcc-path",
