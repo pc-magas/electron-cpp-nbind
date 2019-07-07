@@ -2,7 +2,9 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const dialogModule = require('./dialogs.js');
 
 const env = process.env.NODE_ENV || 'production';
-let xmpp = null;
+const nbind = require('nbind');
+const lib = nbind.init().lib;
+const MyPromice=lib.MyPromice;
 
 // See https://stackoverflow.com/a/33067955, by Stijn de Witt
 function moduleAvailable (name) {
@@ -45,10 +47,12 @@ const createWindow = () => {
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/ui/index.html`);
-
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
+
+  MyPromice.exec();
+  
 };
 
 // This method will be called when Electron has finished

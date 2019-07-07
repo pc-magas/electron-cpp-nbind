@@ -1,4 +1,4 @@
-#include "nbind/nbind.h";
+#include "nbind/nbind.h"
 
 #ifndef PROMICE
 #define PROMICE
@@ -15,4 +15,4 @@ NBIND_CLASS(MyPromice) {
   method(exec);
 }
 
-#endif PROMICE
+#endif
