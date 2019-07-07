@@ -1,0 +1,11 @@
+{
+  "name": "electron-cpp-bindings",
+  "version": "1.0.0",
+  "description": "A simple test using C++ bindings on an electron app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dimitrios Desyllas",
+  "license": "MIT"
+}
