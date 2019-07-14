@@ -1,5 +1,4 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
-const dialogModule = require('./dialogs.js');
 
 const env = process.env.NODE_ENV || 'production';
 const nbind = require('nbind');
@@ -41,9 +40,6 @@ const createWindow = () => {
   mainWindow = new BrowserWindow();
   mainWindow.setMenu(null);
   mainWindow.maximize();
-
-  // eslint-disable-next-line new-cap
-  const dialogsHelper = new dialogModule(mainWindow);
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/ui/index.html`);

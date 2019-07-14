@@ -7,10 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ./src/",
     "autogypi": "autogypi",
-    "node-gyp": "node-gyp",
+    "node-gyp": "HOME=~/.electron-gyp node-gyp --target=5.0.6 --arch=x64 --dist-url=https://electronjs.org/headers",
     "emcc-path": "emcc-path",
     "copyasm": "copyasm",
-    "ndts": "ndts"
+    "ndts": "ndts",
+    "electron-version": "electron -v",
+    "rebuild": "HOME=~/.electron-gyp node-gyp rebuild --target=5.0.6 --arch=x64 --dist-url=https://electronjs.org/headers"
   },
   "author": "Dimitrios Desyllas",
   "license": "MIT",
