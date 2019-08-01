@@ -6,7 +6,7 @@
 
 void MyPromice::exec(){
     std::this_thread::sleep_for(std::chrono::milliseconds(200));
-    std::cout << "Executinh Code" << std::endl;
+    std::cout << "Executing Code" << std::endl;
 }
 
 #include "nbind/nbind.h"

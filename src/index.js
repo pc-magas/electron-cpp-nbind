@@ -3,7 +3,7 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const env = process.env.NODE_ENV || 'production';
 const nbind = require('nbind');
 const lib = nbind.init().lib;
-const MyPromice=lib.MyPromice;
+const myPromice= new lib.MyPromice();
 
 // See https://stackoverflow.com/a/33067955, by Stijn de Witt
 function moduleAvailable (name) {
