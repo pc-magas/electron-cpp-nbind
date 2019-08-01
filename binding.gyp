@@ -5,7 +5,7 @@
 				"auto.gypi"
 			],
 			"sources": [
-				"src/cpp/promice.cpp"
+				"hello.cc"
 			]
 		}
 	],
