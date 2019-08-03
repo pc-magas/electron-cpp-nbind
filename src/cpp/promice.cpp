@@ -1,7 +1,7 @@
 #include"promice.h"
 
 #include <iostream>
-#include<thread>
+#include <thread>
 #include <chrono>
 
 void MyPromice::exec(){

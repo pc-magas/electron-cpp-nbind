@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ./src/",
-    "autogypi": "autogypi",
-    "node-gyp": "HOME=~/.electron-gyp node-gyp --target=1.2.3 --arch=x64 --dist-url=https://electronjs.org/headers",
+    "start": "HOME=~/.electron-gyp electron ./src/",
+    "autogypi": "HOME=~/.electron-gyp autogypi",
+    "node-gyp": "HOME=~/.electron-gyp node-gyp --target=5.0.8 --arch=x64",
     "emcc-path": "emcc-path",
     "copyasm": "copyasm",
     "ndts": "ndts",
     "electron-version": "electron -v",
-    "rebuild": "HOME=~/.electron-gyp electron-rebuild --version=70 --module-dir build"
+    "rebuild": "electron-rebuild --target=5.0.8 --module-dir build"
   },
   "author": "Dimitrios Desyllas",
   "license": "MIT",
