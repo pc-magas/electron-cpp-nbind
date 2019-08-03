@@ -2,5 +2,4 @@ node_modules
 .idea
 .vscode
 build
-*.gypi
 bin
